@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#question-container {
+    margin-bottom: 20px;
+    
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #b1d2f5;
+    color: #333333;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    text-align: start;
+}
+
+button:hover {
+    background-color: #a2cbf7;
+    transition: 0.25s linear;
+    
+
+}
+
+.hide {
+    display: none;
+}
+
+.answer-btn {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+
+}
+
+.answer-btn.selected {
+    background-color: #d0e6a5;
+}
+
+.answer-btn.correct {
+    background-color: #8bc34a;
+}
+
+.answer-btn.wrong {
+    background-color: #e57373;
+}
+#ten-countdown{
+    /* text-align: center; */
+    border: 5px solid #004853;
+    display:inline;
+    padding: 5px;
+    color: #004853;
+    font-family: Verdana, sans-serif, Arial;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#next-btn{
+    width: auto;
+}
+#back-btn{
+    width: auto;
+}
+
+#login-btn{
+    width: auto;
+}
+
+#username-dropdown{
+    width: 100%;
+}
+
+
+/* CSS */
+#next-btn,#back-btn{
+                
+                outline: 0;
+                cursor: pointer;
+                border: none;
+                padding: 0 56px;
+                height: 45px;
+                line-height: 45px;
+                border-radius: 7px;
+                font-weight: 400;
+                font-size: 16px;
+                background: #fff;
+                color: #696969;
+                box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+                transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+}
+#next-btn,#back-btn:hover{
+                    background: rgba(255,255,255,0.9);
+                    box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+                }

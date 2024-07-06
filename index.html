@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login-container">
+            <h2>Login</h2>
+            <select id="username-dropdown">
+                <option value="" disabled selected>Select username</option>
+                <option value="1">User 1</option>
+                <option value="2">User 2</option>
+                <option value="3">User 3</option>
+                <option value="4">User 4</option>
+                <option value="5">User 5</option>
+                <option value="6">User 6</option>
+                <option value="7">User 7</option>
+                <option value="8">User 8</option>
+                <option value="9">User 9</option>
+                <option value="10">User 10</option>
+            </select>
+            <button id="login-btn">Login</button>
+        </div>
+        <div id="quiz-container" class="hide">
+            <div id="question-container">
+                <div id="timer" class=""></div>
+                <h2 id="question"></h2>
+                <div id="answers-container">
+                    <!-- Answers will be appended here -->
+                </div>
+            </div>
+            <button id="back-btn">Back</button>
+            <button id="next-btn">Next</button>
+            <button id="submit-btn" class="hide">Submit</button>
+        </div>
+        <div id="result-container" class="hide">
+            <h2 id="usernameShow"></h2>
+            <h2>Your Score: <span id="score"></span></h2>
+            <h1 id="result-time">hh</h1>
+            <p>Your answers recorded.</p>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
